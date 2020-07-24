@@ -1,18 +1,23 @@
 body {
-  color: #fff;
-  background-color: teal; }
+    color: #fff;
+    background-color: teal;
+}
 
 h1 {
-  text-align: center; }
+    text-align: center;
+}
 
 .subtitle {
-  text-align: center;
-  text-transform: uppercase;
-  color: greenyellow; }
+    text-align: center;
+    text-transform: uppercase;
+    color: greenyellow;
+}
 
 p {
-  font-size: 20px;
-  color: orange; }
+    font-size: 20px;
+    color: orange;
+}
 
 .paragraph {
-  color: khaki; }
+    color: khaki;
+}
