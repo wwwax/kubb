@@ -12,6 +12,7 @@ const removeComments = require('gulp-strip-css-comments');
 const rename = require('gulp-rename');
 const rigger = require('gulp-rigger');
 const uglify = require('gulp-uglify');
+const panini = require('panini');
 const browsersync = require('browser-sync').create();
 
 const path = {
@@ -52,9 +53,17 @@ function watchFiles() {
 }
 
 function html() {
+    panini.refresh();
     return gulp
         .src(path.src.html, { base: './src/' })
         .pipe(plumber())
+        .pipe(
+            panini({
+                root: './src/',
+                layouts: './src/tpl/layouts',
+                partials: './src/tpl/partials',
+            }),
+        )
         .pipe(gulp.dest(path.build.html))
         .pipe(browsersync.stream());
 }
