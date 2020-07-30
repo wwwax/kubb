@@ -1,4 +1,5 @@
 'use strict';
 
-alert('test1');
-alert('test2');
+alert('hello from main');
+
+alert('hello from modal kubb');

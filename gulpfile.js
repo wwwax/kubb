@@ -18,7 +18,7 @@ const browsersync = require('browser-sync').create();
 const path = {
     src: {
         html: './src/*.html',
-        css: './src/assets/sass/style.scss',
+        css: './src/assets/sass/main.scss',
         js: './src/assets/js/**/*.js',
         image: './src/assets/img/**/*.{jpg,jpeg,png,svg,gif,ico}',
     },
