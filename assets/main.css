@@ -1,0 +1,39 @@
+/* COMMON */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  background-color: turquoise;
+}
+
+/* TEST */
+
+.test {
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+.test p {
+  padding: 20px 0;
+}
