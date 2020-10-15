@@ -16,15 +16,133 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* HEADER */
 
 .header {
-  background-color: turquoise;
+  background-color: red;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: teal;
+  z-index: 2;
+}
+
+.header_inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  align-items: center;
+}
+
+.header .logo {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+}
+
+.header .logo_image {
+  margin-right: 10px;
+}
+
+.header .menu_list {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+.header .menu_list_item {
+  margin-left: 10px;
+}
+
+.header .menu_list_link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header .burger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header_inner {
+    height: 60px;
+  }
+
+  .header .burger {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+  }
+
+  .header .burger span {
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    background-color: red;
+  }
+
+  .header .burger::before,
+  .header .burger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+  }
+
+  .header .burger::before {
+    top: 0;
+  }
+
+  .header .burger::after {
+    bottom: 0;
+  }
+
+  .header .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+  }
 }
 
 /* TEST */
@@ -32,6 +150,7 @@ ul {
 .test {
   background-color: rebeccapurple;
   color: #fff;
+  padding: 100px 0 0 0;
 }
 
 .test p {
