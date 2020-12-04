@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -28,24 +34,10 @@ img {
 
 .header {
   background-color: green;
-
-  position: relative;
-  padding: 20px 0;
-}
-
-.header::before {
-  background-color: teal;
-
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
 }
 
 .header_inner {
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,35 +45,67 @@ img {
 
 /* LOGO */
 
-.logo {
-  /* position: relative; */
-  z-index: 2;
-}
-
 .logo_image {
-  width: 48px;
+  width: 32px;
 }
 
-/* BURGER */
+/* BURGER_BTN */
 
 .burger_btn {
-  z-index: 2;
   width: 30px;
-  height: 30px;
-  background-color: red;
+  height: 20px;
+  position: relative;
 }
 
-.burger_btn.active {
-  background-color: blue;
+.burger_btn span {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
+
+.burger_btn span:nth-child(1) {
+  top: 0;
+}
+
+.burger_btn span:nth-child(2) {
+  top: 8px;
+}
+
+.burger_btn span:nth-child(3) {
+  bottom: 0;
+}
+
+/* BURGER_BTN ACTIVE */
+
+.burger_btn.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.burger_btn.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 8px;
+}
+
+.burger_btn.active span:nth-child(2) {
+  transform: scale(0);
+}
+
+/* BURGER_MENU */
 
 .burger_menu {
-  position: absolute;
+  display: none;
+  position: fixed;
   top: -100%;
+  /* top: 0; */
   left: 0;
-  z-index: 1;
-  width: 100vw;
-  height: 100vh;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: tomato;
 }
 
@@ -89,7 +113,7 @@ img {
   top: 0;
 }
 
-.burger_menu_inner {
+.burger_menu_list {
   height: 100%;
   display: flex;
   flex-direction: column;
