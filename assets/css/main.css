@@ -55,6 +55,7 @@ img {
   width: 30px;
   height: 20px;
   position: relative;
+  z-index: 6;
 }
 
 .burger_btn span {
@@ -97,16 +98,15 @@ img {
 /* BURGER_MENU */
 
 .burger_menu {
-  display: none;
   position: fixed;
   top: -100%;
-  /* top: 0; */
   left: 0;
-  z-index: 4;
+  z-index: 5;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  /* overflow: auto; */
   background-color: tomato;
+  transition: top 0.3s ease;
 }
 
 .burger_menu.active {
@@ -114,15 +114,19 @@ img {
 }
 
 .burger_menu_list {
+  list-style: none;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger_menu_item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .burger_menu_link {
-  margin-bottom: 10px;
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
