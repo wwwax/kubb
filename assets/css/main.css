@@ -46,10 +46,8 @@ img {
 .wrapper {
   width: 100vw;
   height: 100vh;
-
   display: flex;
   flex-direction: column;
-
   background-image: url('../img/bg/bg_mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -64,7 +62,6 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 0, 0, 0.3);
 }
 
 .hero_title,
@@ -133,8 +130,21 @@ img {
 
 .header {
   padding: 30px 0;
-  font-size: 30px;
-  text-align: center;
+  background: linear-gradient(to right, rgba(25, 22, 33, 0.1) 40%, rgba(25, 22, 33, 1));
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: roboto_condensed_bold;
+  font-size: 20px;
+  text-decoration: none;
   color: #fff;
-  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.logo_image {
+  margin-right: 4px;
 }
