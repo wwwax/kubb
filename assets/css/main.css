@@ -41,6 +41,18 @@ img {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
 /* INTRO */
 
 .wrapper {
@@ -129,8 +141,14 @@ img {
 /* HEADER */
 
 .header {
-  padding: 30px 0;
   background: linear-gradient(to right, rgba(25, 22, 33, 0.1) 40%, rgba(25, 22, 33, 1));
+}
+
+.header_inner {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* LOGO */
@@ -147,4 +165,55 @@ img {
 
 .logo_image {
   margin-right: 4px;
+}
+
+/* BURGER_BTN */
+
+.burger_btn {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.burger_btn span {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  transition: transform 0.2s linear;
+}
+
+.burger_btn::before,
+.burger_btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  transition: all 0.2s linear;
+}
+
+.burger_btn::before {
+  top: 0;
+}
+
+.burger_btn::after {
+  bottom: 0;
+}
+
+.burger_btn.active span {
+  transform: scale(0);
+}
+
+.burger_btn.active::before {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.burger_btn.active::after {
+  transform: rotate(-45deg);
+  bottom: 8px;
 }
