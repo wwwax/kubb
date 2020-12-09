@@ -21,7 +21,7 @@ body.lock {
 }
 
 html {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 img {
@@ -40,6 +40,11 @@ img {
 @font-face {
   font-family: roboto_slab_light;
   src: url('../fonts/RobotoSlab-Light.ttf');
+}
+
+@font-face {
+  font-family: roboto_slab_bold;
+  src: url('../fonts/RobotoSlab-Bold.ttf');
 }
 
 @font-face {
@@ -437,6 +442,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .about_title {
@@ -515,6 +521,69 @@ img {
 
   .about_subtitle {
     font-size: 18px;
+  }
+}
+
+/* SERVICES */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services_item {
+  width: 300px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
+}
+
+.services_item:last-child {
+  margin-bottom: 0;
+}
+
+.services_title {
+  padding: 20px 10px;
+  font-family: roboto_slab_bold;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+}
+
+.services_text {
+  font-family: roboto_regular;
+  font-size: 13px;
+  line-height: 22px;
+  color: #666;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .services {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .services_item {
+    width: 230px;
+    margin-bottom: 0;
+  }
+
+  .services_title {
+    padding: 24px 16px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .services_item {
+    width: 370px;
+    padding: 20px;
+  }
+
+  .services_title {
+    padding: 30px 20px;
   }
 }
 
