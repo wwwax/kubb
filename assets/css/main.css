@@ -327,29 +327,29 @@ img {
   }
 }
 
-/* MENU_SOCIALS */
+/* SOCIALS */
 
-.menu_socials {
-  width: 100%;
-}
-
-.menu_socials::before {
-  content: '';
-  display: block;
-  width: 100px;
-  height: 2px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  background-color: #fff;
-}
-
-.menu_socials_list {
+.socials {
   list-style: none;
+  position: relative;
+  padding-top: 20px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.menu_socials_link {
+.socials::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
+.socials_link {
   display: block;
   width: 12px;
   height: 12px;
@@ -358,51 +358,46 @@ img {
   padding: 12px;
 }
 
-.menu_socials_link.facebook {
+.socials_link.facebook {
   background-image: url('../img/socials/facebook.png');
 }
 
-.menu_socials_link.twitter {
+.socials_link.twitter {
   background-image: url('../img/socials/twitter.png');
 }
 
-.menu_socials_link.dribbble {
+.socials_link.dribbble {
   background-image: url('../img/socials/dribbble.png');
 }
 
-.menu_socials_link.pinterest {
+.socials_link.pinterest {
   background-image: url('../img/socials/pinterest.png');
 }
 
 @media (min-width: 768px) {
-  .menu_socials::before {
+  .socials::before {
     width: 150px;
   }
 }
 
 @media (min-width: 1440px) {
-  .menu_socials {
+  .socials {
+    padding-top: 0;
     width: auto;
     height: 30px;
     position: relative;
+    align-items: center;
   }
 
-  .menu_socials::before {
-    content: '';
-    position: absolute;
-    top: 0;
+  .socials::before {
     left: 0;
     width: 2px;
     height: 100%;
     background-color: #3b3942;
+    transform: none;
   }
 
-  .menu_socials_list {
-    height: 100%;
-    align-items: center;
-  }
-
-  .menu_socials_link {
+  .socials_link {
     padding: 0;
     margin-left: 20px;
   }
