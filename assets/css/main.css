@@ -21,7 +21,7 @@ body.lock {
 }
 
 html {
-  /* font-family: sans-serif; */
+  font-family: sans-serif;
 }
 
 img {
@@ -585,6 +585,47 @@ img {
   .services_title {
     padding: 30px 20px;
   }
+}
+
+/* INSTAGRAM */
+.instagram {
+  padding: 60px 0;
+  background-color: #2c2c2c;
+}
+
+.instagram_title {
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.instagram_btn {
+  width: 100px;
+  height: 30px;
+  margin: 20px auto 0;
+  text-align: center;
+  line-height: 30px;
+  background-color: orange;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* IMAGE-SLIDER */
+
+.image-slider {
+  padding: 40px;
+  background-color: tomato;
+}
+
+.image-slider__wrapper {
+  padding: 20px;
+}
+
+.image-slider__image img {
+  margin: 0 auto;
 }
 
 /* visually-hidden */

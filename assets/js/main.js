@@ -1,3 +1,5 @@
+// NAVIGATION
+
 const burgerBtn = document.querySelector('.burger_btn');
 const menu = document.querySelector('.menu');
 const body = document.querySelector('body');
@@ -18,3 +20,7 @@ function onBurgerBtnClick() {
     isMenuOpen = false;
   }
 }
+
+// SWIPER
+
+new Swiper('.image-slider');
