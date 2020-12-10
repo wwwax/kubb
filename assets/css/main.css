@@ -615,13 +615,11 @@ img {
 
 /* IMAGE-SLIDER */
 
-.image-slider {
-  padding: 40px;
+/* .image-slider {
 }
 
 .image-slider__wrapper {
-  padding: 20px;
-}
+} */
 
 .image-slider__image img {
   margin: 0 auto;
