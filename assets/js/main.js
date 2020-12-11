@@ -23,4 +23,12 @@ function onBurgerBtnClick() {
 
 // SWIPER
 
-new Swiper('.image-slider');
+new Swiper('.image-slider', {
+  grabCursor: true,
+  autoHeight: true,
+  slidesPerView: 'auto',
+  spaceBetween: 15,
+  loop: true,
+  // loopedSlides: 7,
+  freeMode: true,
+});
