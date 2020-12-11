@@ -457,33 +457,58 @@ img {
   }
 }
 
+/* HELLO */
+
+.hello {
+  padding-top: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.hello_title {
+  margin-bottom: 10px;
+  font-family: roboto_slab_light;
+  font-size: 22px;
+  color: #444;
+}
+
+.hello_text {
+  font-family: roboto_regular;
+  font-size: 12px;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .hello {
+    padding-top: 60px;
+  }
+
+  .hello_title {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hello {
+    padding-top: 80px;
+  }
+
+  .hello_title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .hello_text {
+    font-size: 14px;
+  }
+}
+
 /* SERVICES */
 
 .services {
   padding: 40px 0;
   background-color: #f9f9f9;
-}
-
-.services_inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 40px;
-}
-
-.services_title {
-  margin-bottom: 10px;
-  font-family: roboto_slab_light;
-  text-align: center;
-  color: #444;
-}
-
-.services_description {
-  margin-bottom: 40px;
-  font-family: roboto_regular;
-  font-size: 10px;
-  text-align: center;
-  color: #666;
 }
 
 .services_subtitle {
@@ -498,16 +523,6 @@ img {
     padding: 60px 0;
   }
 
-  .services_title {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-
-  .services_description {
-    margin-bottom: 60px;
-    font-size: 14px;
-  }
-
   .services_subtitle {
     font-size: 16px;
   }
@@ -516,15 +531,6 @@ img {
 @media (min-width: 1440px) {
   .services {
     padding: 80px 0;
-  }
-
-  .services_title {
-    margin-bottom: 30px;
-    font-size: 30px;
-  }
-
-  .services_description {
-    margin-bottom: 80px;
   }
 
   .services_subtitle {
@@ -693,7 +699,36 @@ img {
   width: auto;
 }
 
-/* visually-hidden */
+/* JOURNAL */
+
+.journal {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.journal_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto_condensed_bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #444;
+}
+
+@media (min-width: 768px) {
+  .journal {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .journal {
+    padding: 80px 0;
+  }
+}
+
+/* VISUALLY-HIDDEN */
 
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
