@@ -1,3 +1,5 @@
-# kubb: ["HTML", "CSS", "JavaScript", "SwiperJS"];
+# kubb
 
-https://wwwax.github.io/kubb/
+## https://wwwax.github.io/kubb/
+
+### stack: ["HTML", "CSS", "JavaScript"];
