@@ -637,7 +637,7 @@ img {
   width: 10px;
   height: 10px;
   margin-right: 6px;
-  background-image: url('../img/instagram/button_ico.png');
+  background-image: url('../img/icons/instagram_button_icon.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -677,6 +677,36 @@ img {
 
 .image-slider .swiper-slide {
   width: auto;
+}
+
+/* JOURNAL */
+
+.journal_item {
+  width: 300px;
+  padding: 30px 0;
+
+  border: 1px solid red;
+  background-color: lightblue;
+}
+
+.journal_item_title {
+  font-family: roboto_slab_bold;
+  font-size: 14px;
+  color: #444;
+  text-align: center;
+  background-color: lightgreen;
+}
+
+.journal_item_footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+}
+
+@media (min-width: 768px) {
+  .journal_item_title {
+    font-size: 16px;
+  }
 }
 
 /* VISUALLY-HIDDEN */
