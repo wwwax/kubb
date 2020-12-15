@@ -689,7 +689,7 @@ img {
 
 .journal_item {
   width: 300px;
-  padding: 10px 0;
+  padding: 20px 0;
   margin-bottom: 10px;
   border: 1px solid #e3e3e3;
 }
@@ -780,7 +780,6 @@ img {
 
   .journal_item {
     width: 230px;
-    padding: 20px 0;
     margin-bottom: 0;
   }
 
