@@ -826,6 +826,79 @@ img {
   }
 }
 
+/* ABOUT */
+
+.about {
+  padding-bottom: 40px;
+  background-color: #f9f9f9;
+  background-color: #ff6347;
+}
+
+.about_inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.about_title {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-family: roboto_condensed_bold;
+  font-size: 14px;
+  color: #444;
+  text-transform: uppercase;
+
+  background-color: yellow;
+}
+
+.about_title span {
+  margin-right: 10px;
+  line-height: 1;
+}
+
+.about_title::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 4px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.about_me {
+  background-color: teal;
+}
+
+.about_services {
+  background-color: slateblue;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .about_title {
+    padding-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .about_title span {
+    margin-right: 14px;
+    line-height: 1;
+  }
+
+  .about_title::after {
+    width: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .about {
+    padding-bottom: 80px;
+  }
+}
+
 /* VISUALLY-HIDDEN */
 
 .visually-hidden:not(:focus):not(:active),
