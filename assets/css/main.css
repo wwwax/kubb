@@ -1216,7 +1216,24 @@ img {
 /* COPYRIGHT */
 
 .copyright {
-  background-color: tomato;
+  padding: 20px 0;
+  font-family: roboto_regular;
+  font-size: 11px;
+  color: #cacaca;
+  background-color: #333333;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    padding: 30px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .copyright {
+    padding: 40px;
+  }
 }
 
 /* VISUALLY-HIDDEN */
